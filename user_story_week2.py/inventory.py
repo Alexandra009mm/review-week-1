@@ -19,6 +19,9 @@ write("\n--- INVENTARY SISTEM ---")
 ejecutar = "ejecutar"
 
 inventory = {} 
+validation = True
+a = False
+
 c_id =1 
 total_price = 0
 total_product = 0
@@ -97,18 +100,19 @@ while ejecutar:
          print(inventory)
 
     elif op == 3:
-        while roll:
+        while validation:
             clear()
+        try:
             write("\n--- SUBMENU STADISTICS ---")
             mn("View Total Inventory Value","View Average Price View Leading","View Leading Product ")
-        try:
+        
+            print("\n------")
             ask = int(input("What do you want to see?")).lower()
-
-            if ask not in (1,2,3,4):
-                    print("ERROR! Try again.")
+            
 
         except ValueError:
             print("ERROR! Try again.")
+            
 
             if ask == 1:  
                 suma_total = 0

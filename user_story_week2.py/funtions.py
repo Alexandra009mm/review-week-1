@@ -9,6 +9,7 @@ def mostrar_menu(op1,op2,op3,op4):
         print(f"\n1. {op1} =>")
         print(f"2. {op2} =>")
         print(f"3. {op3} =>")
+        print(f"4. {op4} =>")
     except(TypeError,SyntaxError,ValueError):
         print('ingresa lo que quieres mostar en las 4 opciones, con "" ')
 
